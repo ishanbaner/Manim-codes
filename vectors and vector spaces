@@ -41,8 +41,7 @@ class TestScene1(Scene):
 
 class Graph1(Scene):
     def construct(self):
-        ax = Axes(x_length = 15, y_length = 15, axis_config={"include_numbers":False},).add_coordinates()
-
+        
         plane = NumberPlane( axis_config={"include_numbers": False},)
         arrow1 = Arrow(start=DOWN,end=UP*2.4+RIGHT*2.3,color=GOLD).shift(UP*0.8+LEFT*0.18)
         coord = Matrix([[2],[3]]).shift(UP*2.9+RIGHT*2.5)
@@ -61,7 +60,6 @@ class Graph1(Scene):
 
 class Graph2(Scene):
     def construct(self):
-        ax = Axes(x_length = 15, y_length = 15, axis_config={"include_numbers":False},).add_coordinates()
 
         plane = NumberPlane( axis_config={"include_numbers": False},)
         START = (-14,-14,0)
